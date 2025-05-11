@@ -1,0 +1,18 @@
+from together import Together
+
+image = client.images.generate(
+    prompt="MJ v6, Ultra-detailed anime fantasy noble elf girl in a seductive pose, walking towards a grand luxurious canopy bed, long flowing silky white hair cascading down her back, deep red eyes half-closed with a soft alluring gaze, a subtle blush on her cheeks, long eyelashes framing her face, soft glossy lips curved into a confident loving smile, wearing a black and gold fantasy lingerie armor, a transparent black silk veil covering her head with golden sunset light shining through it, a transparent silk skirt split at the front and back, bare breasts with golden nipple covers, exposed smooth hips and thighs, golden jewelry and chains adorning her body, black sheer thigh-high stockings, holding a green wine bottle and a wine glass, set against a warm soft sunset light entering through tall arched windows, highly detailed luxurious royal bedroom with ornate antique carved wooden bedposts, plush velvet drapes flowing gently, antique ornate furniture, polished wooden floors reflecting the golden light, fine dust particles floating in the sunbeams, rich fantasy atmosphere, soft cinematic shadows, elegant and romantic mood, highly realistic and photorealistic, with intricate details and textures, in a close-up shot, with a shallow depth of field, emphasizing the subject's face and body, with a subtle sense of movement and atmosphere.",
+    model="black-forest-labs/FLUX.1-dev-lora",
+    height=768,
+    width=1024,
+    seed=7155270,
+    steps=28,
+    image_loras=[
+        {
+            "path": "https://huggingface.co/strangerzonehf/Flux-Midjourney-Mix2-LoRA",
+            "scale": 1,
+        },
+    ],
+)
+
+print(image.data[0].url)
