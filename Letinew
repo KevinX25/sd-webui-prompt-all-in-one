@@ -1,0 +1,18 @@
+from together import Together
+
+image = client.images.generate(
+    prompt="MJ v6, A beautiful anime elf girl, Leticia, with long white silver hair and piercing red eyes, stands in a dimly lit, ornate castle hallway, surrounded by intricate stone carvings and lavish tapestries. She wears a delicate, sheer white veil and a seductive black maid outfit, complete with lace trim and a subtle sheen. Her shy expression and blushing face exude a sense of vulnerability, as she holds a wine bottle with both hands, her slender fingers wrapped delicately around the glass. The soft lighting casts a warm glow, accentuating the rich colors and textures of the scene, from the velvety black of her outfit to the sparkling silver of her hair. The atmosphere is one of fantasy and romance, with a hint of mystery and intrigue.",
+    model="black-forest-labs/FLUX.1-dev-lora",
+    height=768,
+    width=1024,
+    seed=1464323,
+    steps=28,
+    image_loras=[
+        {
+            "path": "https://huggingface.co/strangerzonehf/Flux-Midjourney-Mix2-LoRA",
+            "scale": 1,
+        },
+    ],
+)
+
+print(image.data[0].url)
