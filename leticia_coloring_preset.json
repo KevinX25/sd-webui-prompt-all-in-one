@@ -1,0 +1,10 @@
+{
+  "prompt": "Full body sensual anime elf girl, holding a green wine bottle with both hands, long flowing silver hair with sparkling highlights, deep red eyes, seductive and lustful expression, Egyptian style sheer black skirt with golden embroidery, split front and back panels, translucent black silk veil on her head, black elbow-length fingerless gloves, elegant golden jewelry and bracelets, soft body lighting, dark fantasy blur background, detailed anime shading and line art, strong contrast with dramatic shadows, cinematic lighting, Goblin Slayer anime style, masterpiece, highly detailed, ultra sharp",
+  "negative_prompt": "lowers, bad anatomy, extra limbs, extra fingers, blurry, poorly detailed, bad proportions, missing hands, simple background, text, watermark, monochrome",
+  "sampler_name": "DPM++ 2M Karras",
+  "cfg_scale": 7,
+  "steps": 25,
+  "seed": 25398744,
+  "width": 768,
+  "height": 1152
+}
